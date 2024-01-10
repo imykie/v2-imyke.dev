@@ -2,7 +2,7 @@
   "name": "v2",
   "version": "1.0.0",
   "private": true,
-  "description": "v2",
+  "description": "imyke.dev - v2",
   "author": "Michael Olatunji",
   "keywords": [
     "gatsby"
@@ -16,7 +16,6 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@mdx-js/react": "^3.0.0",
     "autoprefixer": "^10.4.16",
     "gatsby": "^5.12.4",
     "gatsby-plugin-google-gtag": "^5.12.3",
