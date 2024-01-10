@@ -3,13 +3,12 @@ import * as React from "react";
 
 const pageStyles = {
   color: "#232129",
-  padding: 96,
   fontFamily: "-apple-system, Roboto, sans-serif, serif",
 };
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
-    <main style={pageStyles}>
+    <main style={pageStyles} className="p-8 md:p-12 lg:p-16 xl:p-20">
       <h1 className="text-2xl font-bold">Hello! I'm Michael Olatunji.</h1>
       <p className="mt-4">
         <span>
