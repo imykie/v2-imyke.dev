@@ -38,7 +38,7 @@ const IndexPage: React.FC<PageProps> = () => {
       </div>
 
       <h3 className="text-lg font-bold">Socials</h3>
-      <div className="w-[200px] flex justify-between">
+      <div className="w-[140px] flex justify-between">
         <a
           className="text-blue-600 dark:text-blue-500 hover:underline"
           href="https://github.com/imykie"
@@ -46,15 +46,6 @@ const IndexPage: React.FC<PageProps> = () => {
           rel="noopener noreferrer"
         >
           Github
-        </a>
-
-        <a
-          className="text-blue-600 dark:text-blue-500 hover:underline"
-          href="https://twitter.com/_imyke"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Twitter
         </a>
 
         <a
