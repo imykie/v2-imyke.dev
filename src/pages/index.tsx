@@ -7,6 +7,11 @@ const pageStyles = {
 };
 
 const IndexPage: React.FC<PageProps> = () => {
+  React.useEffect(() => {
+    setTimeout(() => {
+      window.location.replace("https://v1.imyke.dev");
+    }, 1_000);
+  }, []);
   return (
     <main style={pageStyles} className="p-8 md:p-12 lg:p-16 xl:p-20">
       <h1 className="text-2xl font-bold">Hello! I'm Michael Olatunji.</h1>
