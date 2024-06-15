@@ -1,37 +1,22 @@
 import React from "react";
+import { graphql, useStaticQuery } from "gatsby";
 
 const intro: React.FC = () => {
+    const data = useStaticQuery(graphql`
+        query Intro {
+            markdownRemark(fileAbsolutePath: { regex: "/intro/" }) {
+                html
+            }
+        }
+    `);
     return (
         <div>
-            <h1 className="text-2xl font-bold text-[#E2E8F0]">
-                Hello! I'm Michael Olatunji.
-            </h1>
-            <p className="mt-4 text-[#94A3B8]">
-                <span>
-                    I'm a <span>Software Engineer</span> and{" "}
-                    <span>a Computer Engineering major</span> with passion for
-                    problem-solving, strong foundation in computer science
-                    principles and proven track record of delivering
-                    high-quality and scalable code.
-                </span>
-            </p>
-
-            {/* <div className="my-4 text-[#94A3B8]">
-                <h1 className="">
-                    A new version of this website is currently in development
-                </h1>
-                <p className="">
-                    visit the old version{" "}
-                    <a
-                        className="hover:underline"
-                        href="https://v1.imyke.dev"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        here
-                    </a>
-                </p>
-            </div> */}
+            <div
+                className="intro-style"
+                dangerouslySetInnerHTML={{
+                    __html: data.markdownRemark.html,
+                }}
+            />
 
             <div className="w-[140px] mt-4 text-[#94A3B8] flex justify-between">
                 <a
