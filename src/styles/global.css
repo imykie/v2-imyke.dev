@@ -1,3 +1,84 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.hard-styles h3 {
+    color: #e2e8f0;
+    display: flex;
+    gap: 3px;
+    align-items: center;
+}
+
+.hard-styles h3 span {
+    margin: 0;
+}
+
+.hard-styles h3 a {
+    display: flex;
+    gap: 3px;
+    align-items: center;
+    flex: 1;
+}
+
+.hard-styles p {
+    color: #94a3b8;
+    margin-top: 8px;
+    font-size: 0.875rem;
+    margin-bottom: 3rem;
+}
+
+.gatsby-resp-image-wrapper {
+    margin: 0 !important;
+    padding: 0 !important;
+    flex: 1;
+}
+
+.gatsby-resp-image-image {
+    box-shadow: none !important;
+    filter: invert(100%) brightness(100%);
+}
+
+/* about style */
+
+.about-style p {
+    color: #94a3b8;
+    margin-bottom: 1rem;
+}
+
+.about-style strong {
+    color: #fff;
+}
+
+/* experience style */
+
+.experience-style h3 {
+    color: #64748b;
+    margin-top: 0.25rem;
+    margin-bottom: 0.75rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.experience-style h2 {
+    color: #e2e8f0;
+    font-weight: 500;
+}
+
+.experience-style p {
+    margin-top: 0.5rem;
+    color: #94a3b8;
+    margin-bottom: 3rem;
+}
+
+/* Intro Style */
+
+.intro-style h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #e2e8f0;
+}
+
+.intro-style p {
+    color: #94a3b8;
+    margin-top: 1rem;
+}

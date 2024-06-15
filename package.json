@@ -16,6 +16,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "@svgr/webpack": "^8.1.0",
     "autoprefixer": "^10.4.16",
     "gatsby": "^5.12.4",
     "gatsby-plugin-google-gtag": "^5.12.3",
@@ -25,7 +26,11 @@
     "gatsby-plugin-postcss": "^6.12.0",
     "gatsby-plugin-sharp": "^5.12.3",
     "gatsby-plugin-sitemap": "^6.12.3",
+    "gatsby-remark-copy-linked-files": "^6.13.1",
+    "gatsby-remark-images": "^7.13.1",
+    "gatsby-remark-relative-images": "^0.2.3",
     "gatsby-source-filesystem": "^5.12.1",
+    "gatsby-transformer-remark": "^6.13.1",
     "gatsby-transformer-sharp": "^5.12.3",
     "postcss": "^8.4.31",
     "react": "^18.2.0",
